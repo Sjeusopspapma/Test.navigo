@@ -1,0 +1,341 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,big,cite,code,del,dfn,em,form,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0}html{overflow-y:scroll;scroll-behavior:smooth}header,footer,main,nav,aside,article,section,figure,figcaption{display:block;margin:0;padding:0;border:0}*{box-sizing:border-box}@font-face{font-family:'ralewaybold';src:url('raleway-bold-webfont.woff2') format('woff2'),url('raleway-bold-webfont.woff') format('woff');font-weight:normal;font-style:normal}@font-face{font-family:'ralewayregular';src:url('raleway-regular-webfont.woff2') format('woff2'),url('raleway-regular-webfont.woff') format('woff');font-weight:normal;font-style:normal}@font-face{font-family:'ralewayitalic';src:url('raleway-italic-webfont.woff2') format('woff2'),url('raleway-italic-webfont.woff') format('woff');font-weight:normal;font-style:normal}body{position:relative;font:100%/1.2 'ralewayregular',Arial,Helvetica,sans-serif;color:#25303b;background-color:#FFF}h1{margin-top:2rem;text-align:center}h1 span,h1 a span{text-indent:-9000px;background:url(https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/Logo_IDFM-H.svg) no-repeat center / 400px auto;margin:1.5em auto 1.5em auto;display:block;color:#25303b;width:500px}h1 small{display:block;font-size:.55em;margin-bottom:1.5rem;color:#000}h1.small{margin-top:0}h2{font-family:'ralewaybold';color:#25303b;margin-bottom:2.5rem;font-weight:normal;font-size:1.7rem}.page-msg h2{margin-bottom:2rem}.page-login h2{margin-bottom:0;font-size:1.4em;text-align:left}h3{margin-bottom:2rem}h3 span[aria-label]{color:#1972d2;padding-right:.7em}h3{font-size:1.1em;font-weight:bold}.highlight-text{font-size:1.1em;font-weight:400}p,li,dt,dd,h5,th,td{font-size:1em}li li,li p,li dt,li dd{font-size:100%}p+p{margin-top:1.5rem}a{color:#1972d2;text-decoration:underline;font-weight:600;font-size:.9em}a+small{color:#1972d2;padding-left:.7em}a:hover{text-decoration:none}a:visited{opacity:.8}ul{list-style-type:none}.list_H-link{justify-content:space-between;display:flex;margin-bottom:1.5em}strong{font-family:'ralewaybold';font-weight:normal}
+.header-cgu{text-align:center;display:block}em{font-family:'ralewayitalic';font-style:normal}img{max-width:100%;border:0}button{border:0;cursor:pointer}button[disabled]{filter:grayscale(100%) opacity(40%);cursor:initial}#container{margin:0 auto 0 auto;overflow:hidden}#container>header{margin-bottom:.5rem;display:flex;justify-content:center;flex-wrap:wrap}nav{width:100%;border-bottom:1px solid #ddd;padding:1em 0;margin-bottom:1em}nav ul{display:flex;justify-content:center}nav ul li{list-style-type:none;margin:0 1.5em;text-transform:uppercase;font-size:.7em;position:relative;padding-top:3.5em}nav ul .ic-mdp{background:url(https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-mdp.svg) no-repeat top center / auto 25px}nav ul .ic-mesInfo{background:url(https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-mesInfos.svg) no-repeat top center / auto 25px}nav ul .ic-session{background:url(https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-session.svg) no-repeat top center / auto 25px}nav ul li[aria-current]:before{content:"";position:absolute;background:#1972d2;height:4px;width:100%;bottom:-17px;left:0}nav ul li[aria-current]{font-family:'ralewaybold'}nav ul li a{color:#25303b;font-weight:normal;text-decoration:none}nav ul li a:hover{font-family:'ralewaybold';text-decoration:none}#container>main{max-width:750px;margin:0 auto;padding:0 2rem}#container>main.table{max-width:1000px}#container>main.page-login{max-width:1030px;display:flex;justify-content:space-between;flex-wrap:wrap}main>section{background:transparent;border:1px solid #e1e1e1;border-radius:10px;padding:2em;margin-bottom:2rem}main.page-login>section{max-width:500px;margin:0 .7rem;flex:1}main.page-msg>section{border:0;padding:0}footer{max-width:730px;margin:0 auto 2rem auto;padding:0 2rem;font-size:.9em}#container>main.table+footer{max-width:1000px;margin:2rem auto}#container>footer p+p{margin-top:.5em}[class*="icon-"]{display:inline-block;overflow:hidden;width:30px;height:30px;text-indent:40em;white-space:nowrap;padding:0;vertical-align:bottom}.show-icons{align-self:center;margin-left:auto;margin-right:1.5rem}.ic-blank{background:url(https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-blank.svg) no-repeat center left;padding-left:1.5em}.ic-blank-right{padding-left:0;padding-right:2em;background-position:center right}.icon-close{background:url(https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-close2.svg) no-repeat center center;top:1em;left:1em;position:absolute}table{border-collapse:collapse;border-radius:.8em .8em 0 0;border-style:hidden;box-shadow:0 0 0 1px #e1e1e1;width:100%}thead{border-radius:1em;color:#fff;background:#53606e}tbody tr td{border-top:1px solid #e1e1e1;font-size:1em}tbody tr td:first-child{font-weight:600;font-size:.9em}tbody tr:first-child{border-top:0}th{padding:1.5em;font-size:1em}th:first-child{border-top-left-radius:.85em}th:last-child{border-top-right-radius:.85em}td{padding:1.5em}tr:nth-child(even){background:#f0f0f0}#form-element{margin:2em 0 0 0;max-width:400px}form{margin:2em 0 0 0;max-width:481px}#kc-register-form{max-width:100%}#kc-form-buttons{max-width:400px}form:first-child{margin:0}fieldset{border-top:1px solid #ddd;padding-top:1em;margin-top:1em}fieldset legend{text-indent:-9000px}form p{width:100%;margin-bottom:1rem;position:relative}form p:last-child{margin-bottom:0}.mandatory{color:#53606e;font-size:.6em}.asterisque{color:#cc3939;font-size:1.3rem;padding-right:.2em;font-family:'ralewaybold';display:inline-block !important;vertical-align:middle}input{border:1px solid #53606e;border-radius:5px;padding:.8em 1em;width:100%;color:#25303b;font-weight:600;font-size:1rem;max-width:410px;background:#fff !important}::placeholder{color:#53606e;font-weight:400}.input-error span{color:#cc3939;display:block}.input-error input{border:1px solid #cc3939}input:read-only{background:#f0f0f0 !important;color:#53606e}#form-forgotPWD{max-width:575px}label{text-transform:uppercase;font-size:.70rem;display:block;color:#53606e;font-weight:600;line-height:2em;letter-spacing:1px}.NoLegend label{text-transform:none;font-size:.9em;font-weight:400;letter-spacing:0}.NoLegend input{width:auto}.msg-alert{border-radius:5px;color:#25303b;padding:1em 1em 1em 4em;background:#ddd url(https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-alertMsg.svg) no-repeat 20px center / 30px;font-weight:600}.msg-alert a{color:#f9a825;text-decoration:underline;font-size:.85em}.msg-alert a:hover{text-decoration:none}.view-password{background:url("https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-viewPWD-off.svg") no-repeat center / auto 15px;text-indent:-9000px;position:absolute;width:2em;left:360px;top:55%;cursor:pointer}p.input-error>span.view-password{top:65%}.view-PWD-on{background:url("https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-viewPWD-on.svg") no-repeat center / auto 15px}.msg-error-registration{background:url("https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-error-red.svg") no-repeat center / auto 15px;text-indent:-9000px;position:absolute;width:2em;right:1em;top:2.4em}.msg-validate-registration{background:url("https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-check-green.svg") no-repeat center / auto 15px;text-indent:-9000px;position:absolute;width:2em;right:1em;top:2.7em}.msg-error-pwd{background:url("https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-error-red.svg") no-repeat left / auto 15px;text-indent:-9000px;position:absolute;width:2em;right:3em;top:68%}.msg-validate-pwd{background:url("https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-check-green.svg") no-repeat center / auto 15px;text-indent:-9000px;position:absolute;width:2em;right:3em;top:2.7em}.msg-error-calendar{background:url("https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-error-red.svg") no-repeat left / auto 15px;text-indent:-9000px;position:absolute;width:2em;right:2em;top:68%}.msg-validate-calendar{background:url("https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-check-green.svg") no-repeat center / auto 15px;text-indent:-9000px;position:absolute;width:2em;right:2em;top:2.7em}.msg-validate,.msg-error,.msg-warning,.msg-success{display:block;margin-bottom:2rem}.msg-error p{background:rgba(210,5,60,0.05) url("https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-error-red.svg") no-repeat 2rem 2em/ 2rem;color:#cc3939}.msg-continue-message{color:#b1d228;background-size:2em;font-size:1.0;padding-left:10px;line-height:150%}.page-login .msg-error{margin-left:.7em;margin-right:.7em;width:100%}.msg-validate p,.msg-success p,.msg-warning p{color:#00873c;background:rgba(0,135,60,0.05) url("https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-check-green.svg") no-repeat 2rem center;background-size:2em;font-size:1.1em}.msg-validate p,.msg-error p,.msg-warning p,.msg-success p{padding:2em 5rem;border-radius:.3em;font-weight:600}.msg-warning a{color:#00873c;text-decoration:underline;font-size:.85em}.msg-warning a:hover{text-decoration:none}.msg-error-check{display:block ruby;margin-bottom:2rem}.msg-error-check p{background:rgba(210,5,60,0.1) no-repeat 2rem center/ 2rem;color:#d2053c;border-radius:.3em;height:2em;text-align:left;font-size:.85em;padding:.5em}.box-validate{background:url(https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-check-green.svg) no-repeat calc(100% - 1rem) 1em / 3.5em;padding:2em 6em 2em 2em}.box-error{background:url(https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-error-red.svg) no-repeat calc(100% - 1rem) 1em / 3.5em;padding:2em 6em 2em 2em}.styled-checkbox{position:absolute;opacity:0}.styled-checkbox+label{position:relative;cursor:pointer;padding:0;line-height:1;margin-left:30px}.styled-checkbox+label:before{content:"";margin-right:10px;display:inline-block;vertical-align:text-top;width:18px;height:18px;background:#fff;border:1px solid #1972d2;margin-left:-30px}.styled-checkbox:hover+label:before{background:#f0f0f0}.styled-checkbox:disabled+label{color:#b8b8b8;cursor:auto}.styled-checkbox:disabled+label:before{background:#ddd}.styled-checkbox:checked+label:after{content:"";position:absolute;left:5px;top:9px;background:#1972d2;width:2px;height:2px;box-shadow:2px 0 0 #1972d2,4px 0 0 #1972d2,4px -2px 0 #1972d2,4px -4px 0 #1972d2,4px -6px 0 #1972d2,4px -8px 0 #1972d2;transform:rotate(45deg);margin-left:-30px}.buttons-bar{list-style-type:none;margin-top:2rem}.buttons-bar.space-between{justify-content:space-between}.page-login .buttons-bar{text-align:center}.buttons-bar p{margin-bottom:auto}ul.buttons-bar{display:flex}ul.buttons-bar li{margin-right:1rem}ul.buttons-bar li a,ul.buttons-bar li input{display:inline-block}.page-login .buttons-bar .bt-secondary,.page-login .buttons-bar .bt-highlight{width:100%;display:inline-block}.buttons-bar input{width:100%}.bt-secondary,.bt-highlight,.bt-secondary,.bt-highlight,.bt-noActivated{border-radius:.3em;font-size:.9em;border:1px solid #1972d2;padding:.6em 2.5em;cursor:pointer;font-size:1rem;text-decoration:none;text-align:center;font-weight:normal;display:inline-block}.bt-secondary-screen,.bt-highlight-screen{border-radius:.3em;font-size:.9em;border:1px solid #1972d2;padding:.6em 2.5em;cursor:pointer;font-size:1rem;text-decoration:none;text-align:center;font-weight:normal;display:inline-block}.bt-highlight-screen{color:#FFF !important;background:#1972d2 !important;text-decoration:none;width:300px}.bt-secondary-screen{color:#1972d2 !important;background:transparent !important;width:300px}.bt-highlight{color:#FFF !important;background:#1972d2 !important;text-decoration:none}.bt-secondary{color:#1972d2 !important;background:transparent !important}.bt-noActivated,button[disabled]{background:#53606e !important;color:#fff !important;border:0;font-weight:normal;cursor:not-allowed;filter:none}.bt-secondary:hover,.bt-highlight:hover{opacity:.7;text-decoration:none}.bt-disabled{color:#fff;background:#ddd;border:1px solid #ddd}::-webkit-scrollbar{width:6px;height:5px}::-webkit-scrollbar-button{width:0;height:0}::-webkit-scrollbar-thumb{border-radius:10px;background:#e6e7e8}::-webkit-scrollbar-thumb:hover{background:#c5c6c8}::-webkit-scrollbar-thumb:active{background:#c5c6c8}::-webkit-scrollbar-track,::-webkit-scrollbar-track:hover,::-webkit-scrollbar-track:active,::-webkit-scrollbar-corner{background:transparent}.user-log{position:absolute;left:10em;display:block;top:1.6rem}.user-log button{display:block;text-decoration:underline;padding:1em 1em 1em 2em;color:#1972d2;background:url(https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-close.svg) no-repeat left center/ 20px 20px;font-size:.9em;font-family:'ralewayregular',Arial,Helvetica,sans-serif;font-weight:600}.box-illustration{margin:7rem 0 4em 0}.box-illustration img{margin:0 auto;display:block}.box-info{margin-bottom:2em}.box-text-scroll{padding:.5em .5em 1em .5em;background:#f6f6f6;border-radius:.5em;margin-bottom:3rem;position:relative}.box-text-scroll p{max-height:20em;overflow-y:scroll;line-height:2;padding:1em;text-align:justify}.box-text-scroll:before{position:absolute;left:0;content:"";width:100%;height:3em;background:linear-gradient(0,rgba(246,246,246,0) 0,rgba(246,246,246,0.6783088235294117) 59%,rgba(246,246,246,0.742734593837535) 100%)}.box-text-scroll button{background:url("https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-scroll.svg") no-repeat;position:relative;bottom:-2.5em;left:calc(50% - 17px);text-indent:-9000px;width:35px;height:35px}.box-text-scroll button:hover::before{position:absolute;top:0;left:0;content:'';width:35px;height:35px;box-shadow:0 0 0 0 rgba(255,255,255,.1);border-radius:100%;opacity:0;-webkit-animation:anim01 2s infinite;animation:anim01 2s infinite;box-sizing:border-box}@-webkit-keyframes anim01{0{opacity:0}30%{opacity:1}60%{box-shadow:0 0 0 30px rgba(54,101,151,.5);opacity:0}100%{opacity:0}}@keyframes anim01{0{opacity:0}30%{opacity:1}60%{box-shadow:0 0 0 30px rgba(54,101,151,.2);opacity:0}100%{opacity:0}}.step-createAccount{display:flex;margin-bottom:3rem;position:relative;list-style-type:none}.step-createAccount:before{content:"";position:absolute;width:100%;height:2px;background:#f0f0f0}.step-createAccount li{text-indent:-9000px;width:33%;position:relative}.step-createAccount li:first-child{flex:1;width:1%}.step-createAccount li[aria-current]{position:relative}.step-createAccount li[aria-current]:before,.step-createAccount li:before,.step-createAccount li.step-past:before{content:"";position:absolute;width:10px;top:-5px;right:0;height:10px;background:#0050aa;border-radius:2em}.step-createAccount li[aria-current]:after,.step-createAccount li.step-past:after{content:"";position:absolute;width:100%;top:0;right:0;height:2px;background:#0050aa}.step-createAccount li:before{background:#f0f0f0}.link-cgu{background:#f0f8ff;border-radius:.5em;padding:1em}.link-cgu a{text-decoration:none;display:block}.link-cgu a:hover{text-decoration:underline}.link-cgu small{padding:0;color:#25303b}.list-link{list-style-type:none;margin-top:2em;position:relative}.list-link:before{content:"";background:#f0f0f0;width:23em;height:1px;top:0;left:0;position:absolute}.list-link li{padding:1.5rem 0}.list-link li:first-child{margin-top:0}.box-appConnect{text-align:center}.box-appConnect img{display:block;margin:0 auto}.box-appConnect span{margin-top:2rem;display:block}.box-register p{margin-top:2.5rem}.box-register span{padding-top:1.2rem;display:block;line-height:1.7em;margin-bottom:-0.4em}.box-register img{display:block;margin:0 auto}.format-pwd{border-radius:8px;background:#f6f6f6;padding:1.5rem;margin-top:2em}.format-pwd dt{font-family:'ralewaybold';padding-bottom:1em}.format-pwd dd{padding:0 0 .5em 0}.format-pwd dd img{padding-right:.5rem;vertical-align:bottom}.format-pwd dd:last-child{padding-bottom:0}.language-selector{position:absolute;left:1.5em;display:block;top:1.5rem}.selector__toggle{display:block;text-decoration:underline;padding:1em 1em 1em 2em;color:#1972d2;background:url(https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-select-close.svg) no-repeat left center/ 20px 20px;-webkit-transition:all .2s linear;-moz-transition:all .2s linear;-o-transition:all .2s linear;transition:all .2s linear;font-size:.9em}.open .selector__toggle{background:url(https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/img/ic-select-open.svg) no-repeat left center/ 20px 20px}.selector__list{display:none;margin:0;padding:0;list-style:none;position:absolute;top:100%;left:1.8em;right:0;border-radius:.3rem;background:#fff}.open .selector__list{display:block}.selector__list li a{display:block;color:#1972d2;text-decoration:none;padding:.2em 0;overflow:hidden;text-overflow:ellipsis;-webkit-transition:all .2s linear;-moz-transition:all .2s linear;-o-transition:all .2s linear;transition:all .2s linear}#container>.page-mentionLegal{max-width:830px;position:relative}#container>.page-mentionLegal:before{position:absolute;top:-1em;content:"";background:#3e3939;width:calc(100% - 4rem);height:1px}.page-mentionLegal h2{font-size:2.15em}.page-mentionLegal h2:before{font-size:2.15em;position:absolute;top:.9em;content:"";background:#3e3939;width:calc(100% - 4rem);height:1px}.page-mentionLegal h3{font-weight:bold;font-size:1.7em;margin:2em auto 1.25em auto}.page-mentionLegal dl{margin-bottom:2em;text-align:justify}.page-mentionLegal dt{font-size:1.1em;font-size:1.1em;margin:0 0 1.5em 1.5em;font-weight:bold;display:list-item;list-style-type:disc}.page-mentionLegal dd{font-size:1.1em}.page-mentionLegal ul{list-style-type:disc;margin-left:2em}#id-birthdate>input.input-text+img,.ui-datepicker-trigger{text-indent:-9000px;position:absolute;width:2em;left:360px;top:50%;cursor:pointer}.cgu-frame{width:100%;height:fit-content;min-height:18em;font-family:'ralewayregular',Arial,Helvetica,sans-serif}.cgu-frame body{height:100%;font-family:'ralewayregular',Arial,Helvetica,sans-serif;line-height:2;overflow-y:scroll;scroll-behavior:smooth}@media screen and (max-width: 970px) {
+    .list_H-link {
+        display: block;
+    }
+
+    .list_H-link li {
+        margin-bottom: 1em
+    }
+
+    .list_H-link li:last-child {
+        margin-bottom: 0
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .user-log {
+        right: 1.5em;
+        top: 0;
+        left: auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    footer {
+        margin: 0.5em auto 3em auto;
+    }
+
+    .language-selector {
+        top: 0
+    }
+
+    h1 {
+        margin-top: 0.5em
+    }
+
+    h1 span, h1 a span {
+        background: url(https://connect.navigo.fr/auth/resources/r4v0g/login/navigo-connect/images/logo_IDFM-V.svg) no-repeat center / 300px auto;
+        height: 5em;
+        margin: 0.5em auto 0 auto;
+        width: 11em;
+    }
+
+    h1 small {
+        font-size: 0.45em;
+        margin: 0 2.5rem 0.5rem 2.5rem;
+        text-align: left
+    }
+
+    h1.small {
+        margin-top: 0;
+    }
+
+    h1 span img {
+        width: 12rem;
+    }
+
+    #container > main.page-login {
+        display: block;
+    }
+
+    main.page-login > section {
+        margin: 0 auto;
+    }
+
+    main.page-login > .box-register {
+        margin-top: 2rem
+    }
+
+    .msg-validate p, .msg-error p {
+        padding: 2em 3rem 2em 5rem;
+    }
+
+    table {
+        width: 40em;
+    }
+
+    .table-scroll {
+        overflow-x: scroll;
+    }
+
+    .table {
+        margin-bottom: 2.5rem !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .buttons-bar.space-between {
+        display: block;
+    }
+
+    ul.buttons-bar li {
+        margin-bottom: 1rem;
+    }
+
+    .page-login .msg-error {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .view-password {
+        right: 1em;
+        left: auto;
+    }
+
+    #container > .page-mentionLegal {
+        padding: 0 2rem
+    }
+
+    .page-mentionLegal h2 {
+        font-size: 22px;
+        margin-bottom: 2rem;
+        padding: 0;
+    }
+
+    .page-mentionLegal h3 {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .box-text-scroll {
+        left: -1.5rem;
+        width: calc(100% + 3em);
+        border-radius: 0
+    }
+
+    .box-info {
+        padding: 2.5em 1.5em 0 1.5em
+    }
+
+    .table {
+        padding: 0 1.5em !important;
+    }
+
+    .table h2 {
+        padding: 0 0 1.5em 0;
+    }
+
+    main > section {
+        margin-bottom: 0;
+    }
+
+    .msg-validate p, .msg-error p {
+        font-size: 0.9em;
+    }
+
+    .format-pwd dt, .format-pwd dd {
+        font-size: 0.9em;
+    }
+
+    .page-login .msg-error, .page-login h2 {
+        padding: 0
+    }
+
+    h1 p {
+        width: 8em;
+        margin: 0.5em auto 0 auto
+    }
+
+    .highlight-text {
+        font-size: 0.95em;
+        font-weight: normal;
+    }
+
+    h3 {
+
+    }
+
+    #container > main.page-login {
+        padding: 0 1rem;
+    }
+
+    #container > main {
+        padding: 0;
+    }
+
+    main > section {
+        padding: 1.5em;
+        border: none
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    input {
+        max-width: 100%;
+    }
+
+    main.page-msg > section {
+        padding: 1.5em;
+    }
+
+    main.page-login > section {
+        border: 1px solid #E1E1E1;
+    }
+
+    ul.buttons-bar {
+        flex-wrap: wrap;
+    }
+
+    ul.buttons-bar li {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    ul.buttons-bar li:first-child {
+        order: 2
+    }
+
+    .buttons-bar .bt-secondary, .buttons-bar .bt-highlight, .buttons-bar .bt-noActivated, .buttons-bar .bt-disabled {
+        width: 100%;
+        display: block;
+    }
+
+    h2, .page-msg h2 {
+        font-size: 1.3em;
+        margin-bottom: 0;
+        padding: 0 1.5rem;
+    }
+
+    .page-login h2 {
+        font-size: 1.1em;
+    }
+
+    .format-pwd {
+        border-radius: 0;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 3rem);
+    }
+
+    .box-validate, .box-error {
+        background: none;
+        padding: 1.5em;
+    }
+
+    .msg-validate, .msg-error, .msg-success, .msg-warning {
+        margin: 1.5em 1.5em 0.5em 1.5em;
+    }
+
+    section .msg-validate, section .msg-error, section .msg-success {
+        padding: 0;
+    }
+
+    .box-validate {
+        background-position: center 4em;
+    }
+
+    .box-validate h3 {
+        text-align: left;
+    }
+
+    h2 + section .msg-validate, h2 + section .msg-error, h2 + section .msg-warning, h2 + section .msg-success {
+        margin: 1.5em 0 0 0
+    }
+
+    .msg-validate + .box-validate, .msg-error + .box-validate, .msg-warning + .box-validate {
+        background: none
+    }
+
+    .msg-validate + .box-validate h3, .msg-error + .box-validate h3, .msg-warning + .box-validate h3 {
+        margin-bottom: 2.5em;
+        text-align: left;
+    }
+
+    .step-createAccount {
+        margin: 2rem 1.5rem 0 2rem;
+    }
+
+    .step-createAccount + section h3 {
+        text-align: left;
+    }
+
+    .box-illustration img {
+        width: 50%
+    }
+    .msg-continue-message {
+        color: #b1d228;
+        background-size: 2em;
+        font-size: 1.1em;
+    }
+    nav {
+        overflow-x: scroll;
+        overflow: -moz-scrollbars-none;
+    }
+
+    nav::-webkit-scrollbar {
+        width: 1px;
+        height: 1px;
+    }
+
+    nav ul .ic-session, nav ul .ic-mesInfo, nav ul .ic-mdp {
+        background: none;
+        padding-top: 1em;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    #mesSessions {
+        width: calc(100% - 3em);
+    }
+
+    #mesSessions + .buttons-bar {
+        margin: 2em 1.5em 0 1.5em
+    }
+
+    #mesSessions + form .buttons-bar {
+        margin: 2em 1.5em 0 1.5em
+    }
+
+    .box-appConnect span {
+        margin: 3rem 0;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    nav ul .ic-session, nav ul .ic-mesInfo, nav ul .ic-mdp {
+        padding-top: 0.5em;
+    }
+
+    nav ul {
+        margin: 0 1em
+    }
+
+    nav ul li {
+        text-align: center;
+        flex: 1;
+        margin: 0;
+        font-size: 0.6em;
+    }
+}
